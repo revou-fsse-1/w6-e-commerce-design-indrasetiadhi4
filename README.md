@@ -32,7 +32,7 @@ function createOrder(userId, products):
 ```
 
 ```
-function calculatePrice(products)
+function calculatePrice(products):
     let totalPrice = 0
     for each product in products:
         let price = product.price
@@ -42,7 +42,7 @@ function calculatePrice(products)
 ```
 
 ```
-function updateProductStock(products)
+function updateProductStock(products):
     for each product in products:
         product.stock -= 1
 ```
