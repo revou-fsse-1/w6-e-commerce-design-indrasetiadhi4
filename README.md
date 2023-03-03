@@ -51,10 +51,9 @@ function updateProductStock(products):
 function createOrderData(dataBase, userId, products, totalPrice):
     let dataBase = connectDatabase()
     let data = {
-        "id": generateOrderId(),
-        "userId": userId
         "products": products,
-        "totalPrice": totalPrice
+        "totalPrice": totalPrice,
+        "userId": userId
     }
     pushToDatabase(data, dataBase.order)
 
